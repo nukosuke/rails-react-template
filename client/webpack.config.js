@@ -9,15 +9,22 @@ const devBuild = process.env.NODE_ENV !== 'production';
 const nodeEnv = devBuild ? 'development' : 'production';
 
 const config = {
-  entry: [
-    'es5-shim/es5-shim',
-    'es5-shim/es5-sham',
-    'babel-polyfill',
-    './app/bundles/Application/startup/registration',
-  ],
+  entry: {
+    vendor: [
+      'es5-shim/es5-shim',
+      'es5-shim/es5-sham',
+      'babel-polyfill',
+    ],
+    app: [
+      './app/bundles/Application/startup/clientRegistration',
+    ],
+    server: [
+      './app/bundles/Application/startup/serverRegistration',
+    ]
+  },
 
   output: {
-    filename: 'webpack-bundle.js',
+    filename: '[name]-bundle.js',
     path: '../app/assets/webpack',
   },
 
