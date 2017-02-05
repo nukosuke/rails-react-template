@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import Helmet from 'react-helmet';
 
 export default class Application extends React.Component {
   static propTypes = {
@@ -16,7 +17,11 @@ export default class Application extends React.Component {
   render() {
     return (
       <div className="application">
-
+        <Helmet
+          titleTemplate="%s"
+          defaultTitle="react rails template"
+        />
+        {this.props.children}
       </div>
     );
   }
