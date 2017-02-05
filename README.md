@@ -1,24 +1,25 @@
-# README
+# rails react template
+This is [react_on_rails](https://github.com/shakacode/react_on_rails) + [react-router](https://github.com/ReactTraining/react-router) SPA template.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## stack
+- rails
+- react_on_rails
+- react-router
 
-Things you may want to cover:
+## usage
 
-* Ruby version
+```sh
+# in root dir
+$ bundle install
 
-* System dependencies
+# in client/ dir
+$ yarn install
 
-* Configuration
+# back to root dir
+$ foreman start -f Procfile.dev
+```
 
-* Database creation
+## reference
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Using React Router | react on rails](https://github.com/shakacode/react_on_rails/blob/master/docs/additional-reading/react-router.md)
+- [Ruby on Rails on React on SSR on SPA](http://r7kamura.hatenablog.com/entry/2016/10/10/173610)
