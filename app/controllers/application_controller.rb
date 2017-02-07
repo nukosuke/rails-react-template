@@ -25,18 +25,15 @@ class ApplicationController < ActionController::Base
         status: status,
       )
     else
-      props = common_props.merge(props).as_json
-
       redux_store(
         "store",
-        props: props,
+        props: common_props.merge(props).as_json,
       )
-      
+
       render(
         html: view_context.react_component(
           "Router",
           prerender: true,
-          props: props,
         ),
         layout: true,
         status: status,
