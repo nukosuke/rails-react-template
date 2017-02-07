@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include ReactOnRails::Controller
   protect_from_forgery with: :exception
 
   def home
@@ -24,11 +25,18 @@ class ApplicationController < ActionController::Base
         status: status,
       )
     else
+      props = common_props.merge(props).as_json
+
+      redux_store(
+        "store",
+        props: props,
+      )
+      
       render(
         html: view_context.react_component(
           "Router",
           prerender: true,
-          props: common_props.merge(props).as_json,
+          props: props,
         ),
         layout: true,
         status: status,
