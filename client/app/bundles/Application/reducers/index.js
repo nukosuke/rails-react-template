@@ -1,9 +1,7 @@
-import railsContextReducer, { initialState as railsContextState } from './railsContextReducer';
+import railsContextReducer from './railsContextReducer';
+import currentUserReducer from './currentUserReducer';
 
 export default {
   railsContext: railsContextReducer,
-};
-
-export const initialStates = {
-  railsContextState,
+  currentUser: currentUserReducer,
 };

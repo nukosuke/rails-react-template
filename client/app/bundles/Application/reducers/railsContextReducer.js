@@ -1,5 +1,3 @@
-export const initialState = {};
-
-export default function railsContextReducer(state = initialState) {
+export default function railsContextReducer(state = {}) {
   return state;
 }
