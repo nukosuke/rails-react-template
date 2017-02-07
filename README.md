@@ -4,7 +4,9 @@ This is [react_on_rails](https://github.com/shakacode/react_on_rails) + [react-r
 ## stack
 - rails
 - react_on_rails
+- react
 - react-router
+- redux
 
 ## usage
 
