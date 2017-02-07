@@ -4,6 +4,6 @@ export default {
   railsContext: railsContextReducer,
 };
 
-export const initialState = {
+export const initialStates = {
   railsContextState,
 };

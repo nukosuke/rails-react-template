@@ -1,7 +1,7 @@
 import { applyMiddleware, compose, createStore, combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 import thunkMiddleware from 'redux-thunk';
-import reducers, { initialState } from '../reducers';
+import reducers, { initialStates } from '../reducers';
 
 export default (props, railsContext) => {
   const initialState = {
