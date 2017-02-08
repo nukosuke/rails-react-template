@@ -75,9 +75,6 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.8.0)
-    jbuilder (2.6.1)
-      activesupport (>= 3.0.0, < 5.1)
-      multi_json (~> 1.2)
     jsonapi (0.1.1.beta6)
       jsonapi-parser (= 0.1.1.beta3)
       jsonapi-renderer (= 0.1.1.beta1)
@@ -99,7 +96,6 @@ GEM
     mini_racer (0.1.7)
       libv8 (~> 5.3)
     minitest (5.10.1)
-    multi_json (1.12.1)
     mysql2 (0.4.5)
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
@@ -209,7 +205,6 @@ DEPENDENCIES
   byebug
   devise
   factory_girl_rails
-  jbuilder (~> 2.5)
   listen (~> 3.0.5)
   mini_racer
   mysql2 (>= 0.3.18, < 0.5)

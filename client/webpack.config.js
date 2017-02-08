@@ -14,6 +14,7 @@ const config = {
       'es5-shim/es5-shim',
       'es5-shim/es5-sham',
       'babel-polyfill',
+      'jquery',
     ],
     app: [
       './app/bundles/Application/startup/clientRegistration',
