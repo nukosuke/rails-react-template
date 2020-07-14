@@ -16,6 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'devise'
+gem 'devise_token_auth'
 # gem 'redis', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
