@@ -103,7 +103,7 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     public_suffix (4.0.6)
-    puma (3.12.2)
+    puma (3.12.6)
     racc (1.5.2)
     rack (2.2.3)
     rack-test (0.6.3)
